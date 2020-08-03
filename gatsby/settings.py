@@ -131,7 +131,8 @@ MEDIA_URL = '/media/'
 
 # we whitelist localhost:3000 because that's where frontend will be served
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000'
+    'http://localhost:3000',
+    'http://localhost:5000'
 ]
 
 # This option turns of editing in api views. Use for production

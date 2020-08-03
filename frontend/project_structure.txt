@@ -1,0 +1,9 @@
+Code Samples project structure:
+
+<App>
+    <App Header>
+    <Search Bar with dropdown>
+    <Code Sample Page>
+        <Code Block>
+        <Code Chart>
+        <Code Description>
