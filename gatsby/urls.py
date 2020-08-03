@@ -27,7 +27,7 @@ router.register(r'samples', views.CodingSampleView, 'sample')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    path('', include('frontend.urls'))
+    path('', include('frontend.urls')),
 ]
 
 
