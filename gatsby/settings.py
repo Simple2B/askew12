@@ -121,6 +121,12 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:3000",
+    'http://localhost:8000',
+    'http://localhost:8080',
+]
+
 # This option turns of editing in api views. Use for production
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': (
