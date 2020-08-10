@@ -5,6 +5,9 @@ import SearchBar from '../search-bar';
 import CodeSample from '../code-sample';
 import CodeApiService from '../../service/ApiService';
 
+import logo from './askew_search_logo.png'
+import './app.css';
+
 
 export default class App extends React.Component {
   apiService = new CodeApiService();
@@ -54,13 +57,16 @@ export default class App extends React.Component {
     console.log('Result', result);
     return (
       <div>
-        <div className='ml-auto text-center'>
-          <AppHeaderTitle />
+        <div className='askew-header'>
+          <img className="askew-logo" src={logo} alt="search-png" />
           <SearchBar onSearchChange={ this.onSearchChange }/>
         </div>
         <hr></hr>
         <div>
-          {result ? <CodeSample sample={result}/> : <h1>Princess is in another castle.</h1>}
+          {result ? <CodeSample sample={result}/> : 
+            <div className='prompt text-center'>
+              <h4>Use our search bar to find what you need...</h4>
+            </div>}
         </div>
       </div>
     );

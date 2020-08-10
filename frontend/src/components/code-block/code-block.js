@@ -6,9 +6,8 @@ export default class CodeBlock extends React.Component {
   render() {
     const { code } = this.props;
     return (
-      <div className="pl-3 pr-3">
-        <h3>Code block:</h3>
-        <hr></hr>
+      <div className="p-3">
+        <h4 className='mb-3'>Code block:</h4>
         <div className='code-block'>
           <pre><code>
 {`${code}`}

@@ -7,8 +7,6 @@ export default class CodeDescription extends React.Component {
     const { description, language } = this.props;
     return (
       <div>
-        <hr></hr>
-        <h3>Code description:</h3>
         <p>Language - {language}</p>
         <p>{description}</p>
       </div>

@@ -1,4 +1,9 @@
 .code-meta {
-    border-left: darkgray;
+    display: flex;
+    flex-flow: row;
     align-items: stretch;
+}
+
+.code-meta>div {
+    flex: 0 50%;
 }

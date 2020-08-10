@@ -1,0 +1,21 @@
+.askew-header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.prompt {
+    margin-top: 10rem;
+}
+
+.prompt h4 {
+    color: #99a7b2;
+}
+
+.askew-logo {
+    height: 10em;
+}
+
+h4 {
+    color: #777;
+}

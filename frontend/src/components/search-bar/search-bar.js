@@ -17,9 +17,9 @@ export default class SearchBar extends React.Component {
   render() {
     
     return (
-      <input className="form-control-lg " 
+      <input className="form-control-lg askew-search-bar" 
         type='search' 
-        placeholder='Search code samples'
+        placeholder='Our database is yours'
         onChange={this.onSearchChange}></input>
     )
   }

@@ -5,23 +5,36 @@ import CodeBlock from "../code-block";
 import CodeDescription from "../code-description";
 import './code-sample.css'
 
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 
-export default class CodeSample extends React.Component {
+const CodeSample = (props) => {
 
-  render() {
-    // const { sample } = this.props;
-    const { code, chart, description, language } = this.props.sample;
-    return (
-      <div className='d-flex code-meta'>
-        <div className='w-50'>
-          <CodeBlock code={code}/>
-        </div>
-        <div className='w-50 border-left pl-3'>
-          <CodeChart chart={chart}/>
-          <CodeDescription description={description} language={language}/>
-        </div>
+  const { code, chart, description, language } = props.sample;
+
+  return (
+    <div className='code-meta'>
+      <div>
+        <CodeBlock code={code}/>
       </div>
-    );
-  }
+      <div className='border-left pl-3 pr-3'>
+        <Tabs>
+          <TabList>
+            <Tab><h4>Flow chart</h4></Tab>
+            <Tab><h4>Description</h4></Tab>
+          </TabList>
+
+          <TabPanel>
+            <CodeChart chart={chart} />
+          </TabPanel>
+          <TabPanel>
+            <CodeDescription description={description} language={language}/>
+          </TabPanel>
+        </Tabs>
+      </div>
+    </div>
+  );
 }
+
+export default CodeSample;
