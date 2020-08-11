@@ -1,9 +1,9 @@
 .code-meta {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     align-items: stretch;
 }
 
 .code-meta>div {
-    flex: 0 50%;
+    flex: 1 50%;
 }
