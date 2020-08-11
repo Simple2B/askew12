@@ -11,7 +11,7 @@ import 'react-tabs/style/react-tabs.css';
 
 const CodeSample = (props) => {
 
-  const { code, chart, description, language } = props.sample;
+  const { code, chart, description_picture, language } = props.sample;
 
   return (
     <div className='code-meta'>
@@ -29,7 +29,7 @@ const CodeSample = (props) => {
             <CodeChart chart={chart} />
           </TabPanel>
           <TabPanel>
-            <CodeDescription description={description} language={language}/>
+            <CodeDescription description_picture={description_picture} language={language}/>
           </TabPanel>
         </Tabs>
       </div>

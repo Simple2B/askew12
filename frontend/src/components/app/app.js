@@ -19,7 +19,6 @@ export default class App extends React.Component {
 
   updateResults() {
     return this.apiService.getAllSamples().then(response => {
-      console.log('Fetched from API', response);
       this.setState({
         results: response
       });
@@ -33,7 +32,6 @@ export default class App extends React.Component {
 
   search() {
     if (this.state.searchInput.length < 3) {
-      console.log('Not enough data to query API');
       return [];
     }
     return this.state.results.filter((item) => {
@@ -52,9 +50,9 @@ export default class App extends React.Component {
 
   render() {
     const resultSearch = this.search();
-    console.log('resultSearch', resultSearch);
+
     const result = resultSearch.length ? resultSearch[0] : null;
-    console.log('Result', result);
+
     return (
       <div>
         <div className='askew-header'>

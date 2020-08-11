@@ -7,7 +7,7 @@ export default class CodeChart extends React.Component {
     const { chart } = this.props;
     return (
       <div>
-        <img alt='code-chart' src={chart} />
+        <img className="askew-chart" alt='code-chart' src={chart} />
       </div>
       
     )
