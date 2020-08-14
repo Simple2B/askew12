@@ -21,8 +21,8 @@ const CodeSample = (props) => {
       <div className='border-left pl-3 pr-3'>
         <Tabs>
           <TabList>
-            <Tab><h4>Flow chart</h4></Tab>
-            <Tab><h4>Description</h4></Tab>
+            <Tab><h5>Code Flowchart</h5></Tab>
+            <Tab><h5>Word Flowchart</h5></Tab>
           </TabList>
 
           <TabPanel>

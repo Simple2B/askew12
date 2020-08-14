@@ -1,7 +1,21 @@
+.btn:focus,.btn:active,.btn:hover {
+    outline: none !important;
+    box-shadow: none;
+ }
+
+ .btn-outline-info:focus,.btn-outline-info:active,.btn-outline-info:hover {
+    outline: none !important;
+    box-shadow: none;
+ }
+
+
+
 .askew-header {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    padding-top: 8rem;
+    height: 100vh;
 }
 
 .prompt {
@@ -12,10 +26,33 @@
     color: #99a7b2;
 }
 
-.askew-logo {
-    height: 10em;
+h5 {
+    color: #777777;
 }
 
-h4 {
-    color: #777777;
+.scroll-button-container {
+    margin-top: 20px;
+}
+
+.scroll-btn {
+    outline:none;
+    border-color: #58d9ad;
+    color: #58d9ad;
+    transition: visibility 0s, opacity 0.5s linear;
+
+}
+.scroll-btn:hover {
+    outline:none !important;
+    background-color: #58d9ad;
+    border-color: #2abfa7;
+}
+
+.scroll-btn:focus {
+    outline:none;
+    box-shadow: none;
+}
+
+.scroll-btn:active {
+    outline:none;
+    background-color:  #2abfa7;
 }

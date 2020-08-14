@@ -1,0 +1,18 @@
+.askew-logo {
+    height: 10em;
+}
+
+.askew-logo-and-header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.askew-title {
+    font-size: 70px;
+}
+
+.askew-slogan {
+    margin: 1rem;
+    margin-bottom: 3rem;
+}

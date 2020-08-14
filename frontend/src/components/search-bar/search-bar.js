@@ -20,7 +20,8 @@ export default class SearchBar extends React.Component {
       <input className="form-control-lg askew-search-bar" 
         type='search' 
         placeholder='Our database is yours'
-        onChange={this.onSearchChange}></input>
+        onChange={this.onSearchChange}>
+        </input>
     )
   }
 }

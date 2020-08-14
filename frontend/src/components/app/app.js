@@ -1,11 +1,13 @@
 import React from "react";
 
-import AppHeaderTitle from '../app-header-title';
 import SearchBar from '../search-bar';
 import CodeSample from '../code-sample';
 import CodeApiService from '../../service/ApiService';
+import LogoAndHeader from '../logo-and-header';
+import ScrollComponent from '../scroll-arrow';
 
-import logo from './askew_search_logo.png'
+import ScrollIntoView from 'react-scroll-into-view';
+
 import './app.css';
 
 
@@ -31,7 +33,7 @@ export default class App extends React.Component {
   }
 
   search() {
-    if (this.state.searchInput.length < 3) {
+    if (this.state.searchInput.length < 4) {
       return [];
     }
     return this.state.results.filter((item) => {
@@ -54,17 +56,22 @@ export default class App extends React.Component {
     const result = resultSearch.length ? resultSearch[0] : null;
 
     return (
-      <div>
-        <div className='askew-header'>
-          <img className="askew-logo" src={logo} alt="search-png" />
+      <div className="askew-react-app">
+        <div className='askew-header' id='askew-header'>
+          <LogoAndHeader />
           <SearchBar onSearchChange={ this.onSearchChange }/>
+          <div className='scroll-button-container'>
+            {result ? <ScrollIntoView selector="#askew-code-sample">
+              <button className="btn btn-outline-info scroll-btn shadow-none">
+                Check it out!
+              </button>
+            </ScrollIntoView> : <div></div>}
+          </div>
+          <ScrollComponent />
         </div>
-        <hr></hr>
-        <div>
+        <div id='askew-code-sample'>
           {result ? <CodeSample sample={result}/> : 
-            <div className='prompt text-center'>
-              <h4>Use our search bar to find what you need...</h4>
-            </div>}
+            <div></div>}
         </div>
       </div>
     );
