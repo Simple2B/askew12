@@ -6,7 +6,7 @@ import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css';
 
 export default class CodeDescription extends React.Component {
   render() {
-    const { description_picture, language } = this.props;
+    const { description_picture} = this.props;
     return (
       <div className="image-box">
         <InnerImageZoom src={description_picture} zoomSrc={description_picture} 
