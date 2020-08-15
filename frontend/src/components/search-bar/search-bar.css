@@ -1,5 +1,7 @@
 .askew-search-bar {
     border: 3px solid #99a7b2;
     background: #c7d0d8;
+    text-align: center;
     outline: none;
+    width: 20rem;
 }
