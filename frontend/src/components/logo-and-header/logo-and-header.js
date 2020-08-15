@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './askew_search_logo.png'
 import './logo-and-header.css';
-
+// test comment
 const LogoAndHeader = () => {
   return (
     <div className="askew-logo-and-header">
