@@ -13,7 +13,7 @@ SECRET_KEY = '76en6$=noyek362&nw069%4gc*f8ml9&4)p2^y6t66&q5bgz10'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '192.168.0.153', '127.0.0.1', '161.35.84.46']
+ALLOWED_HOSTS = ['localhost', '192.168.0.153', '127.0.0.1', '161.35.84.46', 'askew13.com', 'www.askew13.com']
 
 
 # Application definition
