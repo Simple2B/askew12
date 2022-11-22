@@ -11,7 +11,7 @@
     "react-dom": "^16.13.1",
     "react-img-zoom": "^0.1.0",
     "react-inner-image-zoom": "^1.1.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-scroll-button": "^1.1.2",
     "react-scroll-into-view": "^1.8.2",
     "react-tabs": "^3.1.1"
